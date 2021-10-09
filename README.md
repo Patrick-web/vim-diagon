@@ -16,7 +16,7 @@ something (especially in a post or other markdown files), then it is for you.
 <!-- TOC START GFM -->
 
 - [Prerequisites](#prerequisites)
-- [Installtion](#installtion)
+- [Installation](#installation)
 - [Usage](#usage)
   - [Commands](#commands)
   - [Options](#options)
@@ -33,7 +33,7 @@ This plugin requires Diagon's command line interface to work. You should follow
 the instructions on its [GitHub repo][diagon-repo] to install it.
 
 
-## Installtion
+## Installation
 
 
 Take [`vim-plug`][plug-repo] for example. Put the following line in your
@@ -46,6 +46,9 @@ Plug 'willchao612/vim-diagon'
 
 
 ## Usage
+
+
+> You can always use `:h vim-diagon.txt` or other entries to refer to the docs.
 
 
 First you can type some text in a code block like this. I will use the example
