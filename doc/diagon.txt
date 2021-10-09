@@ -1,0 +1,118 @@
+*vim-diagon.txt* Generate ASCII art with Diagon API
+
+        _                 _ _                         
+       (_)               | (_)                        
+ __   ___ _ __ ___     __| |_  __ _  __ _  ___  _ __  
+ \ \ / / | '_ ` _ \   / _` | |/ _` |/ _` |/ _ \| '_ \ 
+  \ V /| | | | | | | | (_| | | (_| | (_| | (_) | | | |
+   \_/ |_|_| |_| |_|  \__,_|_|\__,_|\__, |\___/|_| |_|
+                                     __/ |            
+                                    |___/             
+
+====================================================================
+CONTENTS                                            *DiagonContents*
+
+    1. Prerequisites ........ |DiagonPrerequisites|
+    2. Usage ................ |DiagonUsage|
+        2.1 Commands ........ |:Diagon|
+        2.2 Options ......... |DiagonOptions|
+    3. Mappings ............. |DiagonMappings|
+    4. Credits .............. |DiagonCredits|
+
+====================================================================
+Section 1: Prerequisites                       *DiagonPrerequisites*
+
+This plugin requires Diagon's command line interface to work. You should follow
+the instructions on its GitHub repo to install it.
+
+Diagon's GitHub repo: https://github.com/ArthurSonzogni/Diagon
+
+====================================================================
+Section 2: Usage                                       *DiagonUsage*
+
+Personally I would like to use this plugin when I write a markdown file and want
+to draw some simple diagrams.
+
+I type some text with formats specified by Diagon API in a code block like this.
+
+>
+    ```
+    Linux
+      Android
+      Debian
+        Ubuntu
+          Lubuntu
+          Kubuntu
+          Xubuntu
+          Xubuntu
+        Mint
+      Centos
+      Fedora
+    ```
+<
+
+Then I visually select the text within that code block and call `Diagon Tree`.
+
+It turns into this. Simple as that.
+
+>
+    ```
+    Linux
+     ├──├──Android
+     ├──├──Debian
+     ├──│   ├──Ubuntu
+     ├──│   │   ├──Lubuntu
+     ├──│   │   ├──Kubuntu
+     ├──│   │   ├──Xubuntu
+     ├──│   │   └──Xubuntu
+     ├──│   └──Mint
+     ├──├──Centos
+     └──└──Fedora
+    ```
+<
+
+Commands:~
+
+                                                           *:Diagon*
+
+Command `:Diagon` can accept a range, if not given then default to current line.
+
+A type must be given, a complete type list can be invoked by typing `Tab`.
+
+To find all accepted types by Diagon API, refer to its GitHub repo.
+
+Diagon's GitHub repo: https://github.com/ArthurSonzogni/Diagon
+
+Options:~
+
+                                                     *DiagonOptions*
+
+Diagon API provides several additional style and options as well. During my
+experience of using it, I feel like the default ones already suffice. If you
+want to apply different styles or just to try out all the options, you can refer
+to Diagon's online demo (it was first aimed to be an online tool).
+
+Diagon's online demo: https://arthursonzogni.com/Diagon/
+
+With options, you can then use |:Diagon| like this.
+
+>
+    Diagon Math --style=ASCII --transform_math_letters=false
+<
+
+====================================================================
+Section 3: Mappings                                 *DiagonMappings*
+
+You can add mappings like the one below.
+
+>
+    noremap <Leader>D :Diagon<Space>
+<
+
+Then press `Tab` to invoke complete list.
+
+====================================================================
+Section 4: Credits                                   *DiagonCredits*
+
+Many thanks to @ArthurSonzogni for his work on `Diagon` project. This plugin
+wouldn't have existed without that.
