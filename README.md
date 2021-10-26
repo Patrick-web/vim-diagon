@@ -135,8 +135,8 @@ Then press `Tab` to invoke complete list.
 ## Credits
 
 
-Many thanks to @ArthurSonzogni for his work on `Diagon` project. This plugin
-wouldn't have existed without that.
+Many thanks to [@ArthurSonzogni](https://github.com/ArthurSonzogni) for his work
+on [Diagon][diagon-repo] project. This plugin wouldn't have existed without it.
 
 
 [diagon-repo]: https://github.com/ArthurSonzogni/Diagon
