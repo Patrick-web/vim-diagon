@@ -117,4 +117,5 @@ Section 4: Credits                                   *DiagonCredits*
 Many thanks to @ArthurSonzogni for his work on `Diagon` project. This plugin
 wouldn't have existed without that.
 
+====================================================================
 vim:set et sw=4 ts=8 tw=80:
