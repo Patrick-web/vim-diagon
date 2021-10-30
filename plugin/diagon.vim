@@ -1,9 +1,9 @@
 " Maintainer: Will Chao <nerdzzh@gmail.com>
 " Version: 1.0
-" Last Change: 10/09/2021 02:47:22 PM +0800
+" Last Change: 10/27/2021 06:10:38 PM +0800
 
 if exists('g:loaded_diagon')
-    " finish
+    finish
 endif
 let g:loaded_diagon = 1
 
